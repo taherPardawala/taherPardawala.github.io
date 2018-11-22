@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <style>
+    .test {
+      z-index: 10;
+      position: fixed;
+      background-color: white;
+      /* top: -13px; */
+      /* height: 50px; */
+      width: 100%;
+    }
+
+    .box {
+      padding: 25px;
+      /* background: #BE1F2E; */
+      text-align: center;
+      /* margin-bottom: 10px; */
+      position: relative;
+      color: black;
+    }
+
+    .box p {
+      text-align: left;
+      margin-bottom: 0px;
+    }
+
+    .display-5 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 2;
+      color: #999999;
+    }
+
+    .team-font-fix {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    /* .carousel-caption {
+      bottom: 40vh !important;
+    } */
+
+    /* .carousel-caption h1{
+      font-size: 3
+    } */
+
+    #portfolio li {
+      list-style: none;
+      display: inline-block;
+      padding: 0.5em;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    #portfolio ul {
+      text-align: left;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .carousel-item img {
+      /* max-height: 95vh; */
+      height: 100%;
+      width: 100%;
+      /* max-width: 100vw; */
+    }
+
+    .nav-item .nav-link {
+      color: white !important;
+      /* text-shadow: 1px 1px #808080; */
+      /* color: black !important; */
+      font-size: 1em;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link {
+      color: #ce8e40 !important;
+      /* color: #000 !important; */
+      /* text-decoration: underline; */
+    }
+
+    .navbar-default {
+      transition: 750ms ease;
+      /* background: rgba(255, 255, 255, 0.4); */
+    }
+
+    .navbar-default.scrolled {
+      background: #212121;
+    }
+
+    .bg-street {
+      background-image: url('img/6.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      background-color: #212121;
+      height: 100vh;
+    }
+
+    .bg-about {
+      background-image: url('img/team.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      background-color: #212121;
+      height: 100vh;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Samatva - Implementing Design Socially</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
+  <!-- <link href="css/stylish-portfolio.min.css" rel="stylesheet"> -->
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <!-- Navigation -->
+  <!-- <div class="test">
+    <img style="height:72px;margin-left: 1em;" src="img/png log.png" alt="">
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Samatva</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">We Offer</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Projects</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#collaborations">Collaborations</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#design-jam">Design Jam</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">The Cultural Street</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#team">Team</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <!-- Navigation -->
+  <!-- <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top"> -->
+  <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light navbar-default fixed-top">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="/img/png log.png" width="auto" height="50"
+          alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto mx-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Home
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <!-- <span class="sr-only">(current)</span> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#collaborations">Collaborations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#design-jam">Design Jam</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#story-street">The Story Street</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#">Careers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header id="page-top" class="">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption">
+            <h1>Capturing meaningful</h1>
+            <h1>stories for change</h1>
+            <!-- <p>Now support the top here</p> -->
+          </div>
+          <img src="/img/1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Rethinking Social</h1>
+            <h1>and Environmental Planning</h1>
+            <!-- <p>Now support the top here</p> -->
+          </div>
+          <img src="/img/4.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <h1>Merging Social Design</h1>
+            <h1>with innovation</h1>
+            <!-- <p>Now support the top here</p> -->
+          </div>
+          <img src="/img/3.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <h1>Approach business through</h1>
+            <h1>human centric design</h1>
+            <!-- <p>Now support the top here</p> -->
+          </div>
+          <img src="/img/2.jpg" alt="Forth slide">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <h1>Initiating Convesations</h1>
+            <h1>around possibilities</h1>
+            <!-- <p>Now support the top here</p> -->
+          </div>
+          <img src="/img/5.jpg" alt="Fifth slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-about" id="about">
+    <div class="container text-center">
+      <div style="text-align:left;" class="content-section-heading">
+        <h2 class="mb-5 playfair">Samatva as an idea towards development </h2>
+      </div>
+      <div style="text-align:left;" class="row">
+        <div class="col-lg-12 ">
+          <!-- <h2>Samatva as an idea towards development </h2> -->
+          <p class="lead">Samatva is founded by two designers. We believe that design permeates every day lives of
+            people and holds an unbound potential for fostering inclusive growth.We intend to use design as a tool for
+            community and social development projects, specially for rural and semi-urban communities.
+          </p>
+          <p class="lead"> Design, sustainability and development are at the core of Samatva's guiding principles.
+            To implement design for social development is our vision.
+            We identify barriers faced by social practitioners in implementing any project in the field of arts,
+            crafts, spaces, streets, innovation and rural entrepreneurship. We help in finding solutions to community
+            problems using a human-centric approach by keeping both project requirement and beneficiaries in mind.
+            We also document culture-laden stories around us.
+          </p>
+          <!-- <a href="https://unsplash.com/">Unsplash</a> -->
+          <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">We Offer</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-light  text-center" id="services">
+    <div class="container">
+      <div style="text-align:left;" class="content-section-heading">
+        <h2 class="mb-5  playfair">The scope for value addition </h2>
+      </div>
+      <div class="row">
+        <div style="text-align:left;" class="col-lg-6">
+          <!-- <h3 style="color:#00756f;" class="mb-3">Areas Of Work</h3> -->
+          <h3 style="color:#68313b;font-weight: 400;letter-spacing: 2px;" class="mb-3 abel">Areas Of
+            Work</h3>
+          <div class="col-lg-12">
+            <span class="display-5">Capacity Building Development</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Marketplace development</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Documentation</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Implementation</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Product Development for
+              Social Needs</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Awareness campaigns
+            </span>
+          </div>
+        </div>
+        <!-- </div>
+        <div class="row"> -->
+        <div style="text-align:left;" class="col-lg-6">
+          <!-- <h3 style="color:#00756f;" class="mb-3">Entities we work with</h3> -->
+          <h3 style="color:#68313b;font-weight: 400;letter-spacing: 2px;" class="mb-3 abel">Entities we work with</h3>
+          <div class="col-lg-12">
+            <span class="display-5">Non Profit Organizations</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Corporate Social Response</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Government</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Startups</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Businesses</span>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <span class="display-5">Individuals</span>
+          </div>
+        </div>
+        <div class="col-lg-12 mx-auto mt-5">
+          <a href="./services.html" class="btn btn-primary btn-xl">Read More</a>
+        </div>
+      </div>
+      <!-- <h3 class="mb-3">Areas Of Work</h3>
+      <div style="text-align:left;" class="row mb-1">
+        <div class="col-lg-6 mx-auto">
+          <span class="display-5">Capacity Building Development</span>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <span class="display-5">Marketplace development</span>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <span class="display-5">Documentation</span>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <span class="display-5">Implementation</span>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <span class="display-5">Product Development for
+            Social Needs</span>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <span class="display-5">Awareness campaigns
+          </span>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class="mb-3">Entities we work with</h3>
+        <div class="container">
+          <div class="row mb-1">
+            <div class="col-lg-4 mx-auto">
+              <span class="display-5">NGOS</span>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <span class="display-5">CSR Organizations</span>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <span class="display-5">Individuals</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <span class="display-5">Government</span>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <span class="display-5">Startups</span>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <span class="display-5">Businesses</span>
+            </div>
+          </div>
+        </div> -->
+      <!-- <div class="row no-gutters">
+        <div class="col-md-6">
+          <div class="box">
+            <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Capacity Building Development</p>
+            <hr>
+            <ul style="text-align:left;">
+              <li>
+                Enabling local artisans to turn their skill into a sustainable vocation
+              </li>
+              <li>
+                Ensuring cluster development among craft and handloom weaving communities, within the reach of prime
+                beneficiaries
+              </li>
+              <li>
+                Conducting design thinking workshops for various Indian craft communities
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box">
+            <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Marketplace development</p>
+            <hr>
+            <ul style="text-align:left;">
+              <li>
+                E-commerce website development for rural enterprises
+
+              </li>
+              <li>
+                Promoting their interaction and skills in public space
+
+              </li>
+              <li>
+                Increase civic participation through various exhibitions, annual or seasonal events
+
+              </li>
+              <li>
+                Increase civic participation through various exhibitions, annual or seasonal events
+
+              </li>
+              <li>
+                Increase civic participation through various exhibitions, annual or seasonal events
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Documentation</p>
+            <hr>
+            <ul style="text-align:left;">
+              <li>
+                Documenting strategic and creative processes of development sector projects which include process
+                documentation, subject selection, well defining of key indicators, knowledge of research, writing
+                skills & ethical approach and seeing them to completion with desired results
+              </li>
+              <li>
+                Video/photo documentation of development projects, beneficiary experiences, project impact assessment
+                and success stories, crafts and case studies
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box">
+            <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Implementation</p>
+            <hr>
+            <ul style="text-align:left;">
+              <li>
+                Overseeing implementation and monitoring of CSR projects, NGOs initiatives, Government projects,
+                startup ideas and design led innovation projects.
+              </li>
+              <li>
+                Implementing projects in the field of arts, crafts, cultures, spaces and streets, innovation and
+                rural entrepreneurship
+              </li>
+              <li>
+                Working closely with the leadership and program teams of various stakeholders, funders, researchers
+                and
+                academicians
+              </li>
+              <li>
+                Leading the development, adaptation, testing and mainstreaming of best/good practices which are
+                required within design led social projects
+              </li>
+              <li>
+                Identifying and overcoming the barriers amongst the social practitioners and overcome the problems in
+                the implementation of any design project
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Product Development for
+              Social Needs</p>
+            <hr>
+            <ul style="text-align:left;">
+              <li>
+                Working within our team and with various social ventures, communities, rural entrepreneurs and social
+                innovators to create design experiences
+              </li>
+              <li>
+                Providing research-led, sustainable and human-centric design approach to build products and user
+                interactive spaces
+              </li>
+              <li>
+                Branding identities
+              </li>
+              <li>
+                Implementing projects in the field of arts, crafts, cultures, spaces and streets, innovation and
+                rural entrepreneurship
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+  </section>
+
+  <!-- Callout -->
+  <!-- <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Welcome to
+        <em>your</em>
+        next website!</h2>
+      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download
+        Now!</a>
+    </div>
+  </section> -->
+
+  <!-- Portfolio -->
+  <section class="content-section bg-yellow" id="portfolio">
+    <div class="container text-center">
+      <div style="text-align:left;" class="content-section-heading">
+        <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
+        <h2 class="mb-5  playfair">Witness the change</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="filters">
+            <li onClick="filterPortfolio('*')"><a>All</a></li>
+            <li onClick="filterPortfolio('.arts-culture')"><a>Arts & Culture</a></li>
+            <li onClick="filterPortfolio('.street-places')"><a>Streets & Places</a></li>
+            <li onClick="filterPortfolio('.story-doc')"><a>Story Documentation</a></li>
+            <li onClick="filterPortfolio('.prod-idea')"><a>Product Ideation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row no-gutters portfolio">
+        <div class="col-lg-6 p-i arts-culture">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2 style="font-size:1.5em;color: white;">Project Tapri</h2>
+                <p class="mb-0">A low cost lego style, temporary housing structure</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6 p-i street-places">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2 style="font-size:1.5em;color: white;">Varanasi Rickshaw Project</h2>
+                <p class="mb-0">Driver and passenger-friendly decorative pedal rickshaws</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6 p-i story-doc">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2 style="font-size:1.5em;color: white;">Illustrated Aaramnagar</h2>
+                <p class="mb-0">Illustrated map of Aaramnagar</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/iap.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6 p-i prod-idea">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2 style="font-size:1.5em;color: white;">Harmony Bistro</h2>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/a.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <!-- <section class="content-section bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Bringing the synergies together </h2>
+      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+    </div>
+  </section> -->
+
+  <!-- Collaborations -->
+  <section class="content-section bg-light" id="collaborations">
+    <div class="container text-center">
+      <div style="text-align:left;" class="content-section-heading">
+        <h2 class="mb-5 playfair">Bringing the synergies together</h2>
+      </div>
+      <div class="row">
+        <div style="text-align:left;" class="col-lg-12">
+          <p class="lead">We believe that when individuals with an aspiration for change collaborate, different
+            perspectives come to light and solutions can be approached in a way we can only imagine.
+          </p>
+          <p class="lead">
+            We partner with visionary and philanthropic organizations, NGOs, government, rural entrepreneurs, social
+            innovators, think tanks, design firms, social enterprises, startups and use the collaborative energy for
+            social impact.
+          </p>
+          <!-- <a href="https://unsplash.com/">Unsplash</a> -->
+          <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">We Offer</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Jam -->
+  <section class="content-section bg-yellow" id="design-jam">
+    <div class="container text-center">
+      <div style="text-align:left;" class="content-section-heading">
+        <h2 class="mb-5 playfair">We love jamming </h2>
+      </div>
+      <div style="text-align:left;" class="row">
+        <div class="col-lg-12">
+          <p class="lead text-white">We meet up monthly at our studio with like-minded designers, environmentalists, activists,
+            ideators, creative artists, basically anybody with the heart for social development. Every Jam addresses
+            one identified local problem and people leave with something to think about.
+          </p>
+          <p class="lead text-white">
+            The design workshop in our backyard allows anybody to test their ideas at a prototype level thus
+            accelerating the change making process. We invite and try to bring onboard activists and organizations who
+            can reach out to people and implement
+            change at a larger scale.
+          </p>
+          <!-- <a href="https://unsplash.com/">Unsplash</a> -->
+          <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">We Offer</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Street -->
+  <section class="content-section bg-street" id="story-street">
+    <div class="container text-center">
+      <div style="text-align:left;" class="content-section-heading">
+        <h2 class="mb-5 playfair">The Story Street</h2>
+      </div>
+      <div style="text-align:left;" class="row">
+        <div class="col-lg-12">
+          <p class="lead">We meet up monthly at our studio with like-minded designers, environmentalists, activists,
+            ideators, creative artists, basically anybody with the heart for social development.
+            Every Jam addresses one identified local problem and people leave with something to think about.
+          </p>
+          <p class="lead">
+            The design workshop in our backyard allows anybody to test their ideas at a prototype level thus
+            accelerating the change making process.
+            We invite and try to bring onboard activists and organizations who can reach out to people and implement
+            change at a larger scale.
+          </p>
+          <!-- <a href="https://unsplash.com/">Unsplash</a> -->
+          <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">We Offer</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="content-section bg-yellow" id="team">
+    <div class="container text-center">
+      <div style="text-align:left;" class="content-section-heading">
+        <h2 class="mb-5 playfair">The Team</h2>
+      </div>
+      <div class="row">
+        <!-- Team Members Row -->
+        <div class="row no-gutters">
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/150x150" alt="">
+            <h3 class="team-font-fix"><span style="color:#ce8e40;">Pixel</span><br>
+              <small>CHO</small>
+            </h3>
+          </div>
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/150x150" alt="">
+            <h3 class="team-font-fix"><span style="color:#ce8e40;">Ankit Kumar</span><br>
+              <small>Co-Founder</small>
+            </h3>
+          </div>
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/150x150" alt="">
+            <h3 class="team-font-fix"><span style="color:#ce8e40;">Praneet Varma</span><br>
+              <small>Co-Founder</small>
+            </h3>
+          </div>
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/150x150" alt="">
+            <h3 class="team-font-fix"><span style="color:#ce8e40;">Himadri Banerjee</span><br>
+              <small>Designer</small>
+            </h3>
+          </div>
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/150x150" alt="">
+            <h3 class="team-font-fix"><span style="color:#ce8e40;">Vipul Raj</span><br>
+              <small>Admin</small>
+            </h3>
+          </div>
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/150x150" alt="">
+            <h3 class="team-font-fix"><span style="color:#ce8e40;">Tirupati Kondra</span><br>
+              <small>Designer</small>
+            </h3>
+          </div>
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/150x150" alt="">
+            <h3 class="team-font-fix"><span style="color:#ce8e40;">Anuragdasi Patel</span><br>
+              <small>Communication Stategist</small>
+            </h3>
+          </div>
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/150x150" alt="">
+            <h3 class="team-font-fix"><span style="color:#ce8e40;">Prem</span><br>
+              <small>Admin</small>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section id="contact" class="content-section map bg-light">
+    <div class="container text-center">
+      <div style="text-align:left;" class="content-section-heading">
+        <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
+        <h2 class="mb-5 playfair">Contact Us</h2>
+      </div>
+    </div>
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <small>
+      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+    </small>
+  </section>
+
+  <!-- Footer -->
+  <section id="contact" class="content-section">
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="#">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Your Website 2018</p>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- ISOTOPE Plugin JavaScript -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.js"></script>
+  <!-- <script src="js/stylish-portfolio.min.js"></script> -->
+
+  <script>
+    var $grid = $('.portfolio').isotope({
+      itemSelector: '.p-i',
+      layoutMode: 'fitRows'
+    });
+
+    function filterPortfolio(filterClassName) {
+      $grid.isotope({ filter: filterClassName });
+    }
+
+    $(window).scroll(function () {
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 250);
+    });
+
+    $(document).ready(function () { filterPortfolio('*'); });
+  </script>
+
+</body>
+
+</html>

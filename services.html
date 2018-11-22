@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        .test {
+            z-index: 10;
+            position: fixed;
+            background-color: white;
+            /* top: -13px; */
+            /* height: 50px; */
+            width: 100%;
+        }
+
+        .box {
+            padding: 25px;
+            /* background: #BE1F2E; */
+            text-align: center;
+            /* margin-bottom: 10px; */
+            position: relative;
+            color: #999999;
+        }
+
+        .box p {
+            text-align: left;
+            margin-bottom: 0px;
+        }
+
+        .display-5 {
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 2;
+            color: #999999;
+        }
+
+        .team-font-fix {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* .carousel-caption {
+      bottom: 40vh !important;
+    } */
+
+        /* .carousel-caption h1{
+      font-size: 3
+    } */
+
+        #portfolio li {
+            list-style: none;
+            display: inline-block;
+            padding: 0.5em;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #portfolio ul {
+            text-align: left;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .carousel-item img {
+            /* max-height: 95vh; */
+            height: 100%;
+            width: 100%;
+            /* max-width: 100vw; */
+        }
+
+        .nav-item .nav-link {
+            color: white !important;
+            /* text-shadow: 1px 1px #808080; */
+            /* color: black !important; */
+            font-size: 1em;
+        }
+
+        .navbar-light .navbar-nav .active>.nav-link,
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link.show,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: #ce8e40 !important;
+            /* color: #000 !important; */
+            /* text-decoration: underline; */
+        }
+
+        .navbar-default {
+            transition: 750ms ease;
+            /* background: rgba(255, 255, 255, 0.4); */
+        }
+
+        .navbar-default.scrolled {
+            background: #212121;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Samatva - Implementing Design Socially</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <!-- <link href="css/stylish-portfolio.min.css" rel="stylesheet"> -->
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <!-- Navigation -->
+    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light navbar-default fixed-top">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="/img/png log.png" width="auto" height="50"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">Home
+                            <!-- <span class="sr-only">(current)</span> -->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+                        <!-- <span class="sr-only">(current)</span> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">Collaborations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">Design Jam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">The Story Street</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Careers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services -->
+    <section class="content-section bg-light  text-center" id="services">
+        <div class="container">
+            <div class="content-section-heading">
+                <h2 class="mb-5">The scope for value addition </h2>
+            </div>
+            <h3 style="color:#68313b;font-weight: 400;letter-spacing: 2px;" class="mb-3">Areas Of Work</h3>
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <div class="box">
+                        <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Capacity Building Development</p>
+                        <hr>
+                        <ul style="text-align:left;">
+                            <li>
+                                Enabling local artisans to turn their skill into a sustainable vocation
+                            </li>
+                            <li>
+                                Ensuring cluster development among craft and handloom weaving communities, within the
+                                reach of prime
+                                beneficiaries
+                            </li>
+                            <li>
+                                Conducting design thinking workshops for various Indian craft communities
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Marketplace development</p>
+                        <hr>
+                        <ul style="text-align:left;">
+                            <li>
+                                E-commerce website development for rural enterprises
+
+                            </li>
+                            <li>
+                                Promoting their interaction and skills in public space
+
+                            </li>
+                            <li>
+                                Increase civic participation through various exhibitions, annual or seasonal events
+
+                            </li>
+                            <li>
+                                Increase civic participation through various exhibitions, annual or seasonal events
+
+                            </li>
+                            <li>
+                                Increase civic participation through various exhibitions, annual or seasonal events
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box">
+                        <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Documentation</p>
+                        <hr>
+                        <ul style="text-align:left;">
+                            <li>
+                                Documenting strategic and creative processes of development sector projects which
+                                include process
+                                documentation, subject selection, well defining of key indicators, knowledge of
+                                research, writing
+                                skills & ethical approach and seeing them to completion with desired results
+                            </li>
+                            <li>
+                                Video/photo documentation of development projects, beneficiary experiences, project
+                                impact assessment
+                                and success stories, crafts and case studies
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Implementation</p>
+                        <hr>
+                        <ul style="text-align:left;">
+                            <li>
+                                Overseeing implementation and monitoring of CSR projects, NGOs initiatives, Government
+                                projects,
+                                startup ideas and design led innovation projects.
+                            </li>
+                            <li>
+                                Implementing projects in the field of arts, crafts, cultures, spaces and streets,
+                                innovation and
+                                rural entrepreneurship
+                            </li>
+                            <li>
+                                Working closely with the leadership and program teams of various stakeholders, funders,
+                                researchers
+                                and
+                                academicians
+                            </li>
+                            <li>
+                                Leading the development, adaptation, testing and mainstreaming of best/good practices
+                                which are
+                                required within design led social projects
+                            </li>
+                            <li>
+                                Identifying and overcoming the barriers amongst the social practitioners and overcome
+                                the problems in
+                                the implementation of any design project
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box">
+                        <p style="font-size:1.75em;font-weight: 700;" class="mb-1">Product Development for
+                            Social Needs</p>
+                        <hr>
+                        <ul style="text-align:left;">
+                            <li>
+                                Working within our team and with various social ventures, communities, rural
+                                entrepreneurs and social
+                                innovators to create design experiences
+                            </li>
+                            <li>
+                                Providing research-led, sustainable and human-centric design approach to build products
+                                and user
+                                interactive spaces
+                            </li>
+                            <li>
+                                Branding identities
+                            </li>
+                            <li>
+                                Implementing projects in the field of arts, crafts, cultures, spaces and streets,
+                                innovation and
+                                rural entrepreneurship
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Map -->
+    <section id="contact" class="content-section map bg-light">
+        <div class="container text-center">
+            <div class="content-section-heading">
+                <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
+                <h2 class="mb-5">Contact Us</h2>
+            </div>
+        </div>
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+    </section>
+
+    <!-- Footer -->
+    <section id="contact" class="content-section">
+        <footer class="footer text-center">
+            <div class="container">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#">
+                            <i class="icon-social-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#">
+                            <i class="icon-social-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#">
+                            <i class="icon-social-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Your Website 2018</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- ISOTOPE Plugin JavaScript -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+    <!-- <script src="js/stylish-portfolio.min.js"></script> -->
+
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 1);
+        });
+    </script>
+
+</body>
+
+</html>
