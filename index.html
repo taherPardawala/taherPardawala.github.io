@@ -97,6 +97,61 @@
       height: 150px !important;
       width: 150px;
     }
+
+    .slider1 {
+      left: 2% !important;
+      text-align: left !important;
+    }
+
+    .slider1 h1 {
+      font-size: 3em;
+    }
+
+    .slider2 {
+      right: 2% !important;
+      text-align: right !important;
+    }
+
+    .slider2 h1 {
+      font-size: 3em;
+    }
+
+    @media (max-width: 768px) {
+      .slider1 {
+        padding-bottom: 10px !important; 
+      }
+
+      .slider2 {
+        padding-bottom: 10px !important; 
+      }
+
+      .slider1 h1 {
+        font-size: 2em;
+      }
+
+      .slider2 h1 {
+        font-size: 2em;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .slider1 {
+        padding-bottom: 0px !important; 
+      }
+
+      .slider2 {
+        padding-bottom: 0px !important; 
+      }
+
+      .slider1 h1 {
+        font-size: 1em !important;
+      }
+
+      .slider2 h1 {
+        font-size: 1em !important;
+      }
+    }
+
     /* .bg-street {
       background-image: url('img/6.jpg');
       background-repeat: no-repeat;
@@ -187,51 +242,47 @@
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="4"></li> -->
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="carousel-caption">
+          <div class="carousel-caption slider1">
             <h1>Capturing meaningful</h1>
             <h1>stories for change</h1>
             <!-- <p>Now support the top here</p> -->
           </div>
           <img src="/img/1.jpg" alt="First slide">
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <div class="carousel-caption d-none d-md-block">
             <h1>Rethinking Social</h1>
             <h1>and Environmental Planning</h1>
-            <!-- <p>Now support the top here</p> -->
           </div>
           <img src="/img/4.jpg" alt="Second slide">
-        </div>
+        </div> -->
         <div class="carousel-item">
-          <div class="carousel-caption">
+          <div class="carousel-caption slider2">
             <h1>Merging Social Design</h1>
             <h1>with innovation</h1>
-            <!-- <p>Now support the top here</p> -->
           </div>
           <img src="/img/3.jpg" alt="Third slide">
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <div class="carousel-caption">
             <h1>Approach business through</h1>
             <h1>human centric design</h1>
-            <!-- <p>Now support the top here</p> -->
           </div>
           <img src="/img/2.jpg" alt="Forth slide">
-        </div>
-        <div class="carousel-item">
+        </div> -->
+        <!-- <div class="carousel-item">
           <div class="carousel-caption">
             <h1>Initiating Convesations</h1>
             <h1>around possibilities</h1>
-            <!-- <p>Now support the top here</p> -->
           </div>
           <img src="/img/5.jpg" alt="Fifth slide">
-        </div>
+        </div> -->
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -247,10 +298,10 @@
   <!-- About -->
   <section class="content-section bg-light" id="about">
     <div class="container text-center">
-      <div  class="content-section-heading">
+      <div class="content-section-heading">
         <h2 class="mb-5 oswald">Samatva as an idea towards development </h2>
       </div>
-      <div  class="row">
+      <div class="row">
         <div class="col-lg-10 mx-auto">
           <p class="lead">Samatva is founded by two designers. We believe that design permeates every day lives of
             people and holds an unbound potential for fostering inclusive growth.We intend to use design as a tool for
@@ -343,7 +394,7 @@
   <!-- Portfolio -->
   <section class="content-section bg-yellow" id="portfolio">
     <div class="container text-center">
-      <div  class="content-section-heading">
+      <div class="content-section-heading">
         <h2 class="mb-5  oswald">Witness the change</h2>
       </div>
       <div class="row">
@@ -418,11 +469,11 @@
   <!-- Collaborations -->
   <section class="content-section bg-light" id="collaborations">
     <div class="container text-center">
-      <div  class="content-section-heading">
+      <div class="content-section-heading">
         <h2 class="mb-5 oswald">Bringing the synergies together</h2>
       </div>
       <div class="row">
-        <div  class="col-lg-10 mx-auto">
+        <div class="col-lg-10 mx-auto">
           <p class="lead">We believe that when individuals with an aspiration for change collaborate, different
             perspectives come to light and solutions can be approached in a way we can only imagine.
           </p>
@@ -439,10 +490,10 @@
   <!-- Design Jam -->
   <section class="content-section bg-yellow" id="design-jam">
     <div class="container text-center">
-      <div  class="content-section-heading">
+      <div class="content-section-heading">
         <h2 class="mb-5 oswald">We love jamming </h2>
       </div>
-      <div  class="row">
+      <div class="row">
         <div class="col-lg-10 mx-auto">
           <p class="lead">We meet up monthly at our studio with like-minded designers, environmentalists, activists,
             ideators, creative artists, basically anybody with the heart for social development. Every Jam addresses
@@ -462,10 +513,10 @@
   <!-- Story Street -->
   <section class="content-section bg-light" id="story-street">
     <div class="container text-center">
-      <div  class="content-section-heading">
+      <div class="content-section-heading">
         <h2 class="mb-5 oswald">The Story Street</h2>
       </div>
-      <div  class="row">
+      <div class="row">
         <div class="col-lg-10 mx-auto">
           <p class="lead">We meet up monthly at our studio with like-minded designers, environmentalists, activists,
             ideators, creative artists, basically anybody with the heart for social development.
@@ -485,7 +536,7 @@
   <!-- Team -->
   <section class="content-section bg-yellow" id="team">
     <div class="container text-center">
-      <div  class="content-section-heading">
+      <div class="content-section-heading">
         <h2 class="mb-5 oswald">The Team</h2>
       </div>
       <div class="row">
@@ -547,7 +598,7 @@
   <!-- Map -->
   <section id="contact" class="content-section map bg-light">
     <div class="container text-center">
-      <div  class="content-section-heading">
+      <div class="content-section-heading">
         <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
         <h2 class="mb-5 oswald">Contact Us</h2>
       </div>
