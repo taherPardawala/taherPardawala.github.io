@@ -11,8 +11,6 @@ html {
 }
 
 body {
-  /* font-family: 'Source Sans Pro'; */
-  /* font-family: 'Playfair Display', serif; */
   font-family: 'Raleway', sans-serif;
   color:white;
   letter-spacing: 1px;
@@ -365,12 +363,13 @@ a:hover, a:focus, a:active {
 }
 
 .bg-yellow {
-  background-color: #212121 !important;
+  background-color: rgb(120, 144, 156) !important;
+  /* background-color: #212121 !important; */
 }
 
 .bg-light {
-  /* background-color: #FFF8E1 !important; */
-  background-color: #212121 !important;
+  background-color: rgb(120, 144, 156) !important;
+  /* background-color: #212121 !important; */
 }
 
 .btn {
@@ -391,13 +390,8 @@ a:hover, a:focus, a:active {
   color: #ecb807 !important;
 }
 
-.playfair {
-  font-family: 'Playfair Display', serif !important;
-}
-
-
-.abel {
-  font-family: 'Abel', sans-serif !important;
+.oswald {
+  font-family: 'Oswald', sans-serif;
 }
 
 h2 {
@@ -407,7 +401,8 @@ h2 {
   font-size: 24px;
   /* color: #683157; */
   /* color: #684232; */
-  color: #e55812;
+  /* color: #e55812; */
+  color: #a21f00;
 }
 
 h3 {
@@ -418,7 +413,8 @@ h3 {
 .lead {
   font-size: 1.15em;
   /* color: #999999;  */
-  color: white; 
+  color: white;
+  text-align: justify;
 }
 
 /* .container {
