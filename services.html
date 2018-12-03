@@ -19,7 +19,7 @@
             text-align: center;
             /* margin-bottom: 10px; */
             position: relative;
-            color: #999999;
+            /* color: black; */
         }
 
         .box p {
@@ -31,7 +31,7 @@
             font-size: 1.25rem;
             font-weight: 300;
             line-height: 2;
-            color: #999999;
+            /* color: #999999; */
         }
 
         .team-font-fix {
@@ -39,13 +39,18 @@
             margin-top: 1rem;
         }
 
+        .tab-panel-font-fix {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
         /* .carousel-caption {
-      bottom: 40vh !important;
-    } */
+                  bottom: 40vh !important;
+                } */
 
         /* .carousel-caption h1{
-      font-size: 3
-    } */
+                  font-size: 3
+                } */
 
         #portfolio li {
             list-style: none;
@@ -79,7 +84,7 @@
         .navbar-light .navbar-nav .nav-link.active,
         .navbar-light .navbar-nav .nav-link.show,
         .navbar-light .navbar-nav .show>.nav-link {
-            color: #ce8e40 !important;
+            color: #a21f00 !important;
             /* color: #000 !important; */
             /* text-decoration: underline; */
         }
@@ -90,7 +95,158 @@
         }
 
         .navbar-default.scrolled {
-            background: #212121;
+            background: #384750;
+        }
+
+        .team-images {
+            height: 150px !important;
+            width: 150px;
+        }
+
+        .slider1 {
+            left: 2% !important;
+            text-align: left !important;
+        }
+
+        .slider1 h1 {
+            font-size: 3em;
+        }
+
+        .slider2 {
+            right: 2% !important;
+            text-align: right !important;
+        }
+
+        .slider2 h1 {
+            font-size: 3em;
+        }
+
+        @media (max-width: 768px) {
+            .slider1 {
+                padding-bottom: 10px !important;
+            }
+
+            .slider2 {
+                padding-bottom: 10px !important;
+            }
+
+            .slider1 h1 {
+                font-size: 2em;
+            }
+
+            .slider2 h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .slider1 {
+                padding-bottom: 0px !important;
+            }
+
+            .slider2 {
+                padding-bottom: 0px !important;
+            }
+
+            .slider1 h1 {
+                font-size: 1em !important;
+            }
+
+            .slider2 h1 {
+                font-size: 1em !important;
+            }
+
+            .hide-item {
+                display: none;
+            }
+
+            .xsmall-device-tab-margin {
+                margin-top: 1em;
+            }
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            background-color: #586a75 !important;
+            border: none !important;
+        }
+
+        .nav-tabs {
+            border-bottom: none !important;
+        }
+
+        .scope-tabs {
+            flex-direction: column !important;
+        }
+
+        @media (max-width: 992px) {
+            .scope-tabs {
+                flex-direction: row !important;
+            }
+        }
+
+        .bg-tab-1 {
+            background-image: url('img/tab-1.png');
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+            /* background-color: #212121; */
+            /* height: 100vh; */
+        }
+
+        .bg-tab-2 {
+            background-image: url('img/tab-2.png');
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+            /* background-color: #212121; */
+            /* height: 100vh; */
+        }
+
+        .bg-tab-3 {
+            background-image: url('img/tab-3.png');
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+            /* background-color: #212121; */
+            /* height: 100vh; */
+        }
+
+        .bg-tab-4 {
+            background-image: url('img/tab-4.png');
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+            /* background-color: #212121; */
+            /* height: 100vh; */
+        }
+
+        .bg-tab-5 {
+            background-image: url('img/tab-5.png');
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+            /* background-color: #212121; */
+            /* height: 100vh; */
+        }
+
+        .bg-tab-6 {
+            background-image: url('img/tab-6.png');
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+            /* background-color: #212121; */
+            /* height: 100vh; */
+        }
+
+        div>div.col-sm-6.col-xs-12.text-center.xsmall-device-tab-margin>h3>small {
+            font-size: 70% !important;
         }
     </style>
     <meta charset="utf-8">
@@ -171,9 +327,9 @@
     <section class="content-section bg-light  text-center" id="services">
         <div class="container">
             <div class="content-section-heading">
-                <h2 class="mb-5">The scope for value addition </h2>
+                <h2 class="mb-5 oswald">The scope for value addition </h2>
             </div>
-            <h3 style="color:#68313b;font-weight: 400;letter-spacing: 2px;" class="mb-3">Areas Of Work</h3>
+            <h3 style="color:#c84319;font-weight: 400;letter-spacing: 2px;" class="mb-3">Areas Of Work</h3>
             <div class="row no-gutters">
                 <div class="col-md-6">
                     <div class="box">
@@ -315,18 +471,19 @@
         <div class="container text-center">
             <div class="content-section-heading">
                 <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
-                <h2 class="mb-5">Contact Us</h2>
+                <h2 class="mb-5 oswald">Contact Us</h2>
             </div>
         </div>
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe> -->
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.429239755743!2d72.81255101465945!3d19.132679255160777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b604c2037311%3A0xf1aef095b2278d11!2s111%2C+Aram+Nagar+Rd%2C+Aram+Nagar+Part+1%2C+Jeet+Nagar%2C+Versova%2C+Andheri+West%2C+Mumbai%2C+Maharashtra+400061!5e0!3m2!1sen!2sin!4v1543823596693" allowfullscreen></iframe>
         <br />
-        <small>
+        <!-- <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
+        </small> -->
     </section>
 
     <!-- Footer -->
-    <section id="contact" class="content-section">
+    <!-- <section id="contact" class="content-section">
         <footer class="footer text-center">
             <div class="container">
                 <ul class="list-inline mb-5">
@@ -349,7 +506,7 @@
                 <p class="text-muted small mb-0">Copyright &copy; Your Website 2018</p>
             </div>
         </footer>
-    </section>
+    </section> -->
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
