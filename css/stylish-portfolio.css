@@ -363,13 +363,13 @@ a:hover, a:focus, a:active {
 }
 
 .bg-yellow {
-  background-color: rgb(120, 144, 156) !important;
-  /* background-color: #212121 !important; */
+  /* background-color: rgb(120, 144, 156) !important; */
+  background-color: #858ea1 !important;
 }
 
 .bg-light {
-  background-color: rgb(120, 144, 156) !important;
-  /* background-color: #212121 !important; */
+  /* background-color: rgb(120, 144, 156) !important; */
+  background-color: #858ea1 !important;
 }
 
 .btn {
