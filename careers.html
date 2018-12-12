@@ -2,255 +2,6 @@
 <html lang="en">
 
 <head>
-
-    <style>
-        .test {
-            z-index: 10;
-            position: fixed;
-            background-color: white;
-            /* top: -13px; */
-            /* height: 50px; */
-            width: 100%;
-        }
-
-        .box {
-            padding: 25px;
-            /* background: #BE1F2E; */
-            text-align: center;
-            /* margin-bottom: 10px; */
-            position: relative;
-            color: black;
-        }
-
-        .box p {
-            text-align: left;
-            margin-bottom: 0px;
-        }
-
-        .display-5 {
-            font-size: 1.25rem;
-            font-weight: 300;
-            line-height: 2;
-            /* color: #999999; */
-        }
-
-        .team-font-fix {
-            font-size: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .tab-panel-font-fix {
-            font-size: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        /* .carousel-caption {
-      bottom: 40vh !important;
-    } */
-
-        /* .carousel-caption h1{
-      font-size: 3
-    } */
-
-        #portfolio li {
-            list-style: none;
-            display: inline-block;
-            padding: 0.5em;
-            font-size: 1em;
-            cursor: pointer;
-        }
-
-        #portfolio ul {
-            text-align: left;
-            margin-left: 0;
-            padding-left: 0;
-        }
-
-        .carousel-item img {
-            /* max-height: 95vh; */
-            height: 100%;
-            width: 100%;
-            /* max-width: 100vw; */
-        }
-
-        .nav-item .nav-link {
-            color: white !important;
-            /* text-shadow: 1px 1px #808080; */
-            /* color: black !important; */
-            font-size: 1em;
-        }
-
-        .navbar-light .navbar-nav .active>.nav-link,
-        .navbar-light .navbar-nav .nav-link.active,
-        .navbar-light .navbar-nav .nav-link.show,
-        .navbar-light .navbar-nav .show>.nav-link {
-            color: #a21f00 !important;
-            /* color: #000 !important; */
-            /* text-decoration: underline; */
-        }
-
-        .navbar-default {
-            transition: 750ms ease;
-            /* background: rgba(255, 255, 255, 0.4); */
-        }
-
-        .navbar-default.scrolled {
-            background: #384750;
-        }
-
-        .team-images {
-            height: 150px !important;
-            width: 150px;
-        }
-
-        .slider1 {
-            left: 2% !important;
-            text-align: left !important;
-        }
-
-        .slider1 h1 {
-            font-size: 3em;
-        }
-
-        .slider2 {
-            right: 2% !important;
-            text-align: right !important;
-        }
-
-        .slider2 h1 {
-            font-size: 3em;
-        }
-
-        @media (max-width: 768px) {
-            .slider1 {
-                padding-bottom: 10px !important;
-            }
-
-            .slider2 {
-                padding-bottom: 10px !important;
-            }
-
-            .slider1 h1 {
-                font-size: 2em;
-            }
-
-            .slider2 h1 {
-                font-size: 2em;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .slider1 {
-                padding-bottom: 0px !important;
-            }
-
-            .slider2 {
-                padding-bottom: 0px !important;
-            }
-
-            .slider1 h1 {
-                font-size: 1em !important;
-            }
-
-            .slider2 h1 {
-                font-size: 1em !important;
-            }
-
-            .hide-item {
-                display: none;
-            }
-
-            .xsmall-device-tab-margin {
-                margin-top: 1em;
-            }
-        }
-
-        .nav-tabs .nav-item.show .nav-link,
-        .nav-tabs .nav-link.active {
-            background-color: #586a75 !important;
-            border: none !important;
-        }
-
-        .nav-tabs {
-            border-bottom: none !important;
-        }
-
-        .scope-tabs {
-            flex-direction: column !important;
-        }
-
-        @media (max-width: 992px) {
-            .scope-tabs {
-                flex-direction: row !important;
-            }
-        }
-
-        .bg-tab-1 {
-            background-image: url('img/tab-1.png');
-            background-repeat: no-repeat;
-            /* background-attachment: fixed; */
-            background-position: center;
-            background-size: cover;
-            /* background-color: #212121; */
-            /* height: 100vh; */
-        }
-
-        .bg-tab-2 {
-            background-image: url('img/tab-2.png');
-            background-repeat: no-repeat;
-            /* background-attachment: fixed; */
-            background-position: center;
-            background-size: cover;
-            /* background-color: #212121; */
-            /* height: 100vh; */
-        }
-
-        .bg-tab-3 {
-            background-image: url('img/tab-3.png');
-            background-repeat: no-repeat;
-            /* background-attachment: fixed; */
-            background-position: center;
-            background-size: cover;
-            /* background-color: #212121; */
-            /* height: 100vh; */
-        }
-
-        .bg-tab-4 {
-            background-image: url('img/tab-4.png');
-            background-repeat: no-repeat;
-            /* background-attachment: fixed; */
-            background-position: center;
-            background-size: cover;
-            /* background-color: #212121; */
-            /* height: 100vh; */
-        }
-
-        .bg-tab-5 {
-            background-image: url('img/tab-5.png');
-            background-repeat: no-repeat;
-            /* background-attachment: fixed; */
-            background-position: center;
-            background-size: cover;
-            /* background-color: #212121; */
-            /* height: 100vh; */
-        }
-
-        .bg-tab-6 {
-            background-image: url('img/tab-6.png');
-            background-repeat: no-repeat;
-            /* background-attachment: fixed; */
-            background-position: center;
-            background-size: cover;
-            /* background-color: #212121; */
-            /* height: 100vh; */
-        }
-
-        div>div.col-sm-6.col-xs-12.text-center.xsmall-device-tab-margin>h3>small {
-            font-size: 70% !important;
-            line-height: 2;
-            letter-spacing: 0.1em;
-        }
-    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -271,6 +22,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/cutom-additions.css" rel="stylesheet">
     <!-- <link href="css/stylish-portfolio.min.css" rel="stylesheet"> -->
 
 </head>
@@ -331,9 +83,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <p class="lead">Samatva India Design believes that design permeates every day lives of people and
-                        holds an unbound potential for fostering inclusive growth.We intend to use design as a tool for
-                        community and social development projects, specially for rural and semi-urban communities.
+                    <p class="lead">Samatva India Design believes that design permeates everyday lives of people and
+                        holds an unbound potential for fostering inclusive growth. We intend to use design as a tool
+                        for community and social development projects, especially for rural and semi-urban communities.
                         Design, sustainability and development are at the core of Samatva's guiding principles. To
                         implement design for social development is our vision. We identify barriers faced by social
                         practitioners in implementing any project in the field of arts, crafts, spaces, streets,
@@ -350,21 +102,36 @@
             <h3 style="color:#c84319;font-weight: 400;letter-spacing: 2px;" class="mb-3">Video Editor</h3>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <p class="lead">Street dwellers doesn’t have a hold on the government land, which results in
-                        unhygienic looking temporary structures covered with discarded plastic and unused metal
-                        scrapes. Thus, failing the purpose of overall development.
+                    <p class="lead">We're looking for a creative and motivated Video Editor with 2-3 years of
+                        experience to join our team. You will make sure that the video content created is edited to an
+                        exceptional quality. You need to be able to express your ideas clearly and execute them as
+                        well. You need to have the eye for cultural and community stories around and make sure the
+                        final video appreciates the subtleties of different cultures around the country. If you think
+                        you're a fit for our team, send your resume and portfolio to samatvaindiadesign@gmail.com
                     </p>
                 </div>
             </div>
             <h3 style="color:#c84319;font-weight: 400;letter-spacing: 2px;" class="mb-3">Communications Intern</h3>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <p class="lead">The issue addressed here is regarding the semi rural communities, living in their
-                        rickety structures amongst the developed urban settlements. The whole idea of Project TAPRI is
-                        to assemble a low cost lego style temporary housing structure for the street dwellers costing
-                        Rs 16,100.00, covering a carpet area of 456 sq ft. Keeping all the building materials(wooden
-                        poles, pallets and tins) ready cut, one
-                        can easily assemble and disassemble the complete structure in less than a day.
+                    <p class="lead">We're looking for a creative, enthusiastic and motivated Communications Intern. You
+                        will be incharge of looking for relevant organizations/individuals to pitch our projects. You
+                        will work on the project pitches and social media strategy to keep our presence in line with
+                        the beliefs of Samatva. You will follow up with organizations and create deliverables as per
+                        the need of the project. We are a tight, close-knit team and welcome fresh ideas from everyone.
+                        If you think you're a fit for our team, send your resume to samatvaindiadesign@gmail.com
+                    </p>
+                </div>
+            </div>
+            <h3 style="color:#c84319;font-weight: 400;letter-spacing: 2px;" class="mb-3">Graphics Designer</h3>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="lead">
+                        We’re looking for a creative and enthusiastic full-time Graphics Designer to join our team.
+                        You should have 1-2 years of experience of working in an advertising agency or a design studio
+                        with education in a design course. You would be required to work on posters, brochures,
+                        presentations, websites and brand identities. If you think you're a fit for our team, send your
+                        resume to samatvaindiadesign@gmail.com
                     </p>
                 </div>
             </div>
