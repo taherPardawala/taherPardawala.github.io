@@ -34,8 +34,9 @@
   }
 
   .tab-panel-font-fix {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 1rem;
+    text-align: left !important;
   }
 
   /* .carousel-caption {
@@ -196,6 +197,7 @@
 
   .scope-tabs {
     flex-direction: column !important;
+    font-size: 1.2em;
   }
 
   @media (max-width: 992px) {
@@ -268,4 +270,8 @@
     font-size: 70% !important;
     line-height: 2;
     letter-spacing: 0.1em;
+  }
+
+  .color-white {
+    color: white !important;
   }
