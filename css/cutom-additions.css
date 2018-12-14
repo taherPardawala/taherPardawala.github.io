@@ -33,6 +33,14 @@
     margin-top: 1rem;
   }
 
+  .team-font-fix span {
+    color:#c84319 !important;
+  }
+
+  .team-name-color {
+    color:#c84319 !important;
+  }
+
   .tab-panel-font-fix {
     font-size: 1.4rem;
     margin-top: 1rem;
@@ -274,4 +282,8 @@
 
   .color-white {
     color: white !important;
+  }
+
+  .text-stress {
+    font-size:1.3em;
   }
