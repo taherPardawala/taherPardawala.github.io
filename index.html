@@ -159,8 +159,10 @@
           </p>
           <!-- <h2 style="color:white;">Design, sustainability and development are at the core of Samatva's guiding principles.</h2> -->
           <p class="lead">
-            <span class="text-stress">Design, sustainability and development are at the core of Samatva's guiding principles.</span>
-            To implement design for social development is our vision. We identify barriers faced by social practitioners in implementing any project in the field of arts,
+            <span class="text-stress">Design, sustainability and development are at the core of Samatva's guiding
+              principles.</span>
+            To implement design for social development is our vision. We identify barriers faced by social
+            practitioners in implementing any project in the field of arts,
             crafts, spaces, streets, innovation and rural entrepreneurship. We help in finding solutions to community
             problems using a human-centric approach by keeping both project requirement and beneficiaries in mind.
             <span class="text-stress">We also document culture-laden stories around us.</span>
@@ -214,7 +216,10 @@
                 <div class="col-sm-6 col-xs-12 text-center xsmall-device-tab-margin">
                   <img class="rounded-circle img-fluid d-block mx-auto team-images" src="./img/tab-icon-1.png" alt="">
                   <h3 class="tab-panel-font-fix header-red"><span>Capacity building development</span><br>
-                    <small class="text-white text-left" >Enabling local artisans to turn their skill into a sustainable vocation. Ensuring cluster development among craft and handloom weaving communities, within the reach of prime beneficiaries. Conducting design thinking workshops for various Indian craft communities.</small><br>
+                    <small class="text-white text-left">Enabling local artisans to turn their skill into a sustainable
+                      vocation. Ensuring cluster development among craft and handloom weaving communities, within the
+                      reach of prime beneficiaries. Conducting design thinking workshops for various Indian craft
+                      communities.</small><br>
                     <a href="./services.html" class="btn header-red">Read More</a>
                   </h3>
                 </div>
@@ -406,7 +411,8 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <p class="lead">We believe that when individuals with an aspiration for change collaborate, different
-            perspectives come to light and<span class="text-stress"> solutions can be approached in a way we can only imagine</span>.
+            perspectives come to light and<span class="text-stress"> solutions can be approached in a way we can only
+              imagine</span>.
           </p>
           <!-- <h2 style="color:white;">We partner with visionary and philanthropic organizations, NGOs, government, rural entrepreneurs, social
             innovators, think tanks, design firms, social enterprises, startups and use the collaborative energy for
@@ -430,9 +436,9 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <p class="lead">We meet up monthly at our studio with like-minded designers, environmentalists, activists,
-            ideators, creative artists, basically anybody with the heart for social development. 
+            ideators, creative artists, basically anybody with the heart for social development.
             <span class="text-stress">
-                Every jam addresses one identified local problem and people leave with something to think about.
+              Every jam addresses one identified local problem and people leave with something to think about.
             </span>
           </p>
           <p class="lead">
@@ -455,9 +461,9 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <p class="lead">
-              <span class="text-stress">
-                  We tell culture-laden stories from our surroundings which enlighten and amaze us every day.
-              </span>
+            <span class="text-stress">
+              We tell culture-laden stories from our surroundings which enlighten and amaze us every day.
+            </span>
           </p>
         </div>
       </div>
@@ -601,13 +607,19 @@
 
     function filterPortfolio(filterClassName) {
       $grid.isotope({ filter: filterClassName });
+      console.log('filtered')
     }
 
     $(window).scroll(function () {
       $('nav').toggleClass('scrolled', $(this).scrollTop() > 250);
     });
 
-    $(document).ready(function () { filterPortfolio('*'); });
+    $(document).ready(function() {
+        setTimeout(
+          filterPortfolio('*'),
+          100
+        );
+      });
   </script>
 
 </body>
