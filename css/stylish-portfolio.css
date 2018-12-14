@@ -371,8 +371,9 @@ a:hover, a:focus, a:active {
 }
 
 .bg-light {
-  /* background-color: rgb(120, 144, 156) !important; */
-  background-color: #858ea1 !important;
+  background-color: rgb(245, 245, 245) !important;
+  /* background-color: #858ea1 !important; */
+  /* background-color: white !important; */
 }
 
 .btn {
