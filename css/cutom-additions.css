@@ -287,6 +287,15 @@
     /* height: 100vh; */
   }
 
+  .design-bg {
+    background-image: url('../img/collab-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+  }
+
   div>div.col-sm-6.col-xs-12.text-center.xsmall-device-tab-margin>h3>small {
     font-size: 70% !important;
     line-height: 2;
