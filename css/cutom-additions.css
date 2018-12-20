@@ -51,9 +51,9 @@
     bottom: 40vh !important;
   } */
 
-  /* .carousel-caption h1{
-    font-size: 3
-  } */
+  .carousel-caption h1{
+    color: #ffff00 !important;
+  }
 
   #portfolio li {
     list-style: none;
@@ -80,7 +80,7 @@
     color: white !important;
     /* text-shadow: 1px 1px #808080; */
     /* color: black !important; */
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   .navbar-light .navbar-nav .active>.nav-link,
