@@ -55,15 +55,15 @@
     color: #ffff00 !important;
   }
 
-  #portfolio li {
+  #portfolio1 li {
     list-style: none;
-    display: inline-block;
+    /* display: inline-block; */
     padding: 0.5em;
     font-size: 1em;
     cursor: pointer;
   }
 
-  #portfolio ul {
+  #portfolio1 ul {
     text-align: left;
     margin-left: 0;
     padding-left: 0;
@@ -102,8 +102,8 @@
   }
 
   .team-images {
-    height: 150px !important;
-    width: 150px;
+    height: 225px !important;
+    width: 225px;
   }
 
   .tab-icon-images {
@@ -152,6 +152,15 @@
   }
 
   @media (max-width: 768px) {
+    .about-image {
+      /* position: relative; */
+      top:-13% !important;
+    }
+
+    .collab-image {
+      top:0% !important;
+    }
+
     .slider1 {
       padding-bottom: 10px !important;
     }
@@ -198,6 +207,15 @@
   }
 
   @media (max-width: 576px) {
+    .about-image {
+      /* position: relative; */
+      top:-22% !important;
+    }
+
+    .collab-image {
+      top:-19% !important;
+    }
+
     .slider1 {
       padding-bottom: 0px !important;
     }
@@ -282,6 +300,10 @@
   }
 
   @media (max-width: 992px) {
+    #portfolio1 li {
+      display: inline-block;
+    }
+
     .scope-tabs {
       flex-direction: row !important;
     }
@@ -386,7 +408,14 @@
     height:100%;
     width:100%;
     position: relative;
-    top:-42%;
+    top:-32%;
+  }
+
+  .collab-image {
+    height:100%;
+    width:100%;
+    position: relative;
+    top:-24%;
   }
 
   .circle::before {
@@ -394,4 +423,9 @@
     border-radius:50%;
     height: 200px;
     width:200px;
+  }
+
+  .collab-icons {
+    height: 120px !important;
+    width: 120px;
   }

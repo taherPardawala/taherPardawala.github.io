@@ -265,14 +265,14 @@ h6 {
 }
 
 .portfolio-item .caption .caption-content h2 {
-  font-size:1.5em;
+  font-size:1em;
   color: #fff;
   text-transform: uppercase;
 }
 
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
 }
 
 @media (min-width: 992px) {
