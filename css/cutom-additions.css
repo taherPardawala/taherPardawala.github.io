@@ -161,6 +161,10 @@
       top:0% !important;
     }
 
+    .jamming-image {
+      top:-15% !important;
+    }
+    
     .slider1 {
       padding-bottom: 10px !important;
     }
@@ -214,6 +218,10 @@
 
     .collab-image {
       top:-19% !important;
+    }
+
+    .jamming-image {
+      top:-30% !important;
     }
 
     .slider1 {
@@ -416,6 +424,13 @@
     width:100%;
     position: relative;
     top:-24%;
+  }
+
+  .jamming-image {
+    height:100%;
+    width:100%;
+    position: relative;
+    top:-30%;
   }
 
   .circle::before {
