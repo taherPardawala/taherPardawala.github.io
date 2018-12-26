@@ -136,6 +136,10 @@
     font-size: 4em;
     
   }
+
+  .slider2 h1 span {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
   
   .slider3 {
     right: -25% !important;
@@ -147,11 +151,19 @@
     
   }
   
+  .slider3 h1 span {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   .slider4 h1 {
     font-size: 4em;
     
   }
   
+  .slider4 h1 span {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   .slider5 {
     right: -30% !important;
   }
@@ -159,6 +171,10 @@
   .slider5 h1 {
     font-size: 4em;
     
+  }
+
+  .slider5 h1 span {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   @media (max-width: 768px) {
