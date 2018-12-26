@@ -83,6 +83,7 @@
   <header id="page-top" class="">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="-1" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -92,6 +93,11 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
+          <div class="carousel-caption slider0">
+          </div>
+          <img src="./img/grid 2.jpg" alt="Minus one slide">
+        </div>
+        <div class="carousel-item">
           <div class="carousel-caption slider0">
           </div>
           <img src="./img/s1.png" alt="First slide">
@@ -149,17 +155,26 @@
   </header>
 
   <!-- About -->
-  <section class="content-section bg-light" style="padding-bottom:1rem;" id="about">
-    <div class="container text-center">
-      <div class="content-section-heading">
-        <h2 class="mb-5 oswald">Samatva As An Idea Towards Development </h2>
-      </div>
+  <section class="content-section" style="padding-bottom:0rem;" id="about">
+    <div style="background-color:white;" class="mb-5 text-center content-section-heading">
+      <h2 class="oswald">Samatva As An Idea Towards Development </h2>
       <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <p class="lead color-black">We believe that design permeates every day lives of
-            people and holds an unbound potential for fostering inclusive growth.
-          </p>
-          <p style="font-size: 1.5em;" class="color-black">We intend to use design as a tool for community and social
+        <div class="col-lg-5 mx-auto">
+          <p class="color-header-gray">We believe that design permeates every day lives of
+            people and holds an unbound potential for fostering inclusive growth. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-section section-bg-yellow" style="padding-bottom:1rem;padding-top:3rem;">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-5">
+          <img src="./img/tab-4.png" class="img-fluid about-image" />
+        </div>
+        <div class="col-lg-7 mx-auto">
+          <p style="font-size: 1.6em;font-weight: 700;" class="color-white">We intend to use design as a tool for
+            community and social
             development projects,
             specially for rural and semi-urban communities.</p>
           <p class="lead color-black">
@@ -175,6 +190,7 @@
     </div>
   </section>
   <img class="img-fluid d-block" style="width: 100vw;" src="./img/about.jpg">
+  <!-- <img class="img-fluid d-block" style="width: 100vw;" src="./img/grid 2.jpg"> -->
 
   <!-- Approach -->
   <section class="content-section bg-light" style="padding-bottom:1rem;" id="approach">
@@ -197,7 +213,7 @@
   <img class="img-fluid d-block" style="width: 100vw;" src="./img/approach.jpg">
 
   <!-- Services -->
-  <section class="content-section bg-yellow" id="services">
+  <section class="content-section section-bg-yellow" id="services">
     <div class="container">
       <div class="content-section-heading text-center">
         <h2 class="mb-5  oswald">The Scope For Value Addition </h2>
@@ -206,28 +222,28 @@
         <div class="col-sm-12 col-md-4 col-xs-12">
           <ul class="nav nav-tabs scope-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="first"
-                aria-selected="true">Capacity building development</a>
+              <a class="nav-link active" style="color:black !important;" id="1-tab" data-toggle="tab" href="#tab-1"
+                role="tab" aria-controls="first" aria-selected="true">Capacity building development</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="seconf"
-                aria-selected="false">Marketplace development</a>
+              <a class="nav-link" style="color:black !important;" id="2-tab" data-toggle="tab" href="#tab-2" role="tab"
+                aria-controls="seconf" aria-selected="false">Marketplace development</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="third"
-                aria-selected="false">Documentation</a>
+              <a class="nav-link" style="color:black !important;" id="3-tab" data-toggle="tab" href="#tab-3" role="tab"
+                aria-controls="third" aria-selected="false">Documentation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="forth"
-                aria-selected="false">Implementation</a>
+              <a class="nav-link" style="color:black !important;" id="4-tab" data-toggle="tab" href="#tab-4" role="tab"
+                aria-controls="forth" aria-selected="false">Implementation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="5-tab" data-toggle="tab" href="#tab-5" role="tab" aria-controls="fifth"
-                aria-selected="false">Product development for social needs</a>
+              <a class="nav-link" style="color:black !important;" id="5-tab" data-toggle="tab" href="#tab-5" role="tab"
+                aria-controls="fifth" aria-selected="false">Product development for social needs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="6-tab" data-toggle="tab" href="#tab-6" role="tab" aria-controls="sixth"
-                aria-selected="false">Awareness campaigns</a>
+              <a class="nav-link" style="color:black !important;" id="6-tab" data-toggle="tab" href="#tab-6" role="tab"
+                aria-controls="sixth" aria-selected="false">Awareness campaigns</a>
             </li>
           </ul>
         </div>
@@ -235,12 +251,19 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
               <div class="row">
-                <div class="col-sm-6 col-xs-12 bg-tab-1 hide-item">
+                <!-- <div class="col-sm-6 col-xs-12 bg-tab-1 hide-item"> -->
+                <div class="col-sm-6 col-xs-12 hide-item">
+                  <!-- <div class="circle">
+                  </div> -->
+                  <img src="./img/tab-1.PNG" style="height:100%;width:100%;" />
                 </div>
                 <div class="col-sm-6 col-xs-12 text-center xsmall-device-tab-margin">
                   <img class="rounded-circle img-fluid d-block mx-auto tab-icon-images" src="./img/tab-icon-1.png" alt="">
-                  <h3 class="tab-panel-font-fix header-red"><span>Capacity building development</span><br>
-                    <small class="text-white text-left">Enabling local artisans to turn their skill into a sustainable
+                  <h3 class="tab-panel-font-fix header-red">
+                    <!-- <span>Capacity building development</span> -->
+                    <br>
+                    <small class="color-black text-left">Enabling local artisans to turn their skill into a
+                      sustainable
                       vocation. Ensuring cluster development among craft and handloom weaving communities, within the
                       reach of prime beneficiaries. Conducting design thinking workshops for various Indian craft
                       communities.</small><br>
@@ -251,12 +274,16 @@
             </div>
             <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
               <div class="row">
-                <div class="col-sm-6 bg-tab-2 hide-item">
+                <!-- <div class="col-sm-6 bg-tab-2 hide-item"> -->
+                <div class="col-sm-6 col-xs-12 hide-item">
+                  <img src="./img/tab-1.PNG" style="height:100%;width:100%;" />
                 </div>
                 <div class="col-sm-6 text-center col-xs-12 text-center xsmall-device-tab-margin">
                   <img class="rounded-circle img-fluid d-block mx-auto tab-icon-images" src="./img/tab-icon-2.png" alt="">
-                  <h3 class="tab-panel-font-fix header-red"><span>Marketplace development</span><br>
-                    <small class="text-white">E-commerce website development for rural enterprises. Promoting their
+                  <h3 class="tab-panel-font-fix header-red">
+                    <!-- <span>Marketplace development</span> -->
+                    <br>
+                    <small class="color-black">E-commerce website development for rural enterprises. Promoting their
                       interaction and skills in public space. Ensuring cluster development among craft and handloom
                       weaving communities.</small><br>
                   </h3>
@@ -266,13 +293,18 @@
             </div>
             <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">
               <div class="row">
-                <div class="col-sm-6 bg-tab-3 hide-item">
+                <!-- <div class="col-sm-6 bg-tab-3 hide-item"> -->
+                <div class="col-sm-6 col-xs-12 hide-item">
+                  <img src="./img/tab-1.PNG" style="height:100%;width:100%;" />
                 </div>
                 <div class="col-sm-6 text-center col-xs-12 text-center xsmall-device-tab-margin">
                   <img class="rounded-circle img-fluid d-block mx-auto tab-icon-images" src="./img/tab-icon-3.png" alt="">
-                  <h3 class="tab-panel-font-fix header-red"><span>Documentation</span><br>
-                    <small class="text-white">Documenting strategic and creative processes of development sector
-                      projects which include process documentation, subject selection, well defining of key indicators,
+                  <h3 class="tab-panel-font-fix header-red">
+                    <!-- <span>Documentation</span> -->
+                    <br>
+                    <small class="color-black">Documenting strategic and creative processes of development sector
+                      projects which include process documentation, subject selection, well defining of key
+                      indicators,
                       knowledge of research, writing skills & ethical approach and seeing them to completion with
                       desired results.</small><br>
                   </h3>
@@ -282,12 +314,16 @@
             </div>
             <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab">
               <div class="row">
-                <div class="col-sm-6 bg-tab-4 hide-item">
+                <!-- <div class="col-sm-6 bg-tab-4 hide-item"> -->
+                <div class="col-sm-6 col-xs-12 hide-item">
+                  <img src="./img/tab-1.PNG" style="height:100%;width:100%;" />
                 </div>
                 <div class="col-sm-6 text-center col-xs-12 text-center xsmall-device-tab-margin">
                   <img class="rounded-circle img-fluid d-block mx-auto tab-icon-images" src="./img/tab-icon-4.png" alt="">
-                  <h3 class="tab-panel-font-fix header-red"><span>Implementation</span><br>
-                    <small class="text-white">Overseeing implementation and monitoring of CSR projects, NGOs
+                  <h3 class="tab-panel-font-fix header-red">
+                    <!-- <span>Implementation</span> -->
+                    <br>
+                    <small class="color-black">Overseeing implementation and monitoring of CSR projects, NGOs
                       initiatives, Government projects, startup ideas and design led innovation projects.</small><br>
                   </h3>
                   <a href="./services.html" class="btn header-red">Read More</a>
@@ -296,12 +332,16 @@
             </div>
             <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="5-tab">
               <div class="row">
-                <div class="col-sm-6 bg-tab-5 hide-item">
+                <!-- <div class="col-sm-6 bg-tab-5 hide-item"> -->
+                <div class="col-sm-6 col-xs-12 hide-item">
+                  <img src="./img/tab-1.PNG" style="height:100%;width:100%;" />
                 </div>
                 <div class="col-sm-6 text-center col-xs-12 text-center xsmall-device-tab-margin">
                   <img class="rounded-circle img-fluid mx-auto tab-icon-images" src="./img/tab-icon-5.png" alt="">
-                  <h3 class="tab-panel-font-fix header-red"><span>Product development for social needs</span><br>
-                    <small class="text-white">Working within our team and with various social ventures, communities,
+                  <h3 class="tab-panel-font-fix header-red">
+                    <!-- <span>Product development for social needs</span> -->
+                    <br>
+                    <small class="color-black">Working within our team and with various social ventures, communities,
                       rural entrepreneurs and social innovators to create design experiences.</small><br>
                   </h3>
                   <a href="./services.html" class="btn header-red">Read More</a>
@@ -310,12 +350,17 @@
             </div>
             <div class="tab-pane fade" id="tab-6" role="tabpanel" aria-labelledby="6-tab">
               <div class="row">
-                <div class="col-sm-6 bg-tab-6 hide-item">
+                <!-- <div class="col-sm-6 bg-tab-6 hide-item"> -->
+                <div class="col-sm-6 col-xs-12 hide-item">
+                  <img src="./img/tab-1.PNG" style="height:100%;width:100%;" />
                 </div>
                 <div class="col-sm-6 text-center col-xs-12 text-center xsmall-device-tab-margin">
                   <img class="rounded-circle img-fluid d-block mx-auto tab-icon-images" src="./img/tab-icon-6.png" alt="">
-                  <h3 class="tab-panel-font-fix header-red"><span>Awareness campaigns</span><br>
-                    <small class="text-white">Designing social media campaigns to create awareness regarding social and
+                  <h3 class="tab-panel-font-fix header-red">
+                    <!-- <span>Awareness campaigns</span> -->
+                    <br>
+                    <small class="color-black">Designing social media campaigns to create awareness regarding social
+                      and
                       cultural causes.
                       Conducting workshops and meets to address socially relevant issues in collaboration.</small><br>
                   </h3>
@@ -326,18 +371,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="content-section-heading text-center mt-5">
-        <h2 class="mb-5 oswald">Entities we work with</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 display-5 text-center">Non-Profit Organizations</div>
-        <div class="col-lg-4 display-5 text-center">Corporate Social Response</div>
-        <div class="col-lg-4 display-5 text-center">Government</div>
-        <div class="col-lg-4 display-5 text-center">Startups</div>
-        <div class="col-lg-4 display-5 text-center">Businesses</div>
-        <div class="col-lg-4 display-5 text-center">Individuals</div>
-      </div>
-    </div> -->
   </section>
 
   <!-- Callout -->
@@ -428,38 +461,55 @@
   </section> -->
 
   <!-- Collaborations -->
-  <section class="content-section bg-yellow" style="padding-bottom:1rem;" id="collaborations">
-    <div class="container text-center">
-      <div class="content-section-heading">
-        <h2 class="mb-5 oswald">Bringing The Synergies Together</h2>
-      </div>
+  <section class="content-section section-bg-yellow " style="padding-bottom:1rem;" id="collaborations">
+    <div class="mb-5 text-center content-section-heading">
+      <h2 class="oswald">Bringing The Synergies Together</h2>
       <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <p class="lead">We believe that when individuals with an aspiration for change collaborate, different
+        <div class="col-lg-5 mx-auto">
+          <p class="color-header-gray">We believe that when individuals with an aspiration for change collaborate,
+            different
             perspectives come to light and solutions can be approached in a way we can only
-              imagine.
-          </p>
-          <!-- <h2 style="color:white;">We partner with visionary and philanthropic organizations, NGOs, government, rural entrepreneurs, social
-            innovators, think tanks, design firms, social enterprises, startups and use the collaborative energy for
-            social impact.</h2> -->
-          <p class="lead">
-            We partner with visionary and philanthropic entities like
-          </p>
+            imagine.</p>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="content-section" style="background-color: white;padding-top:3rem;padding-bottom:1rem;" id="collaborations">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-3 display-5 text-center">Non-Profit Organizations</div>
-        <div class="col-lg-2 display-5 text-center">Government</div>
-        <div class="col-lg-2 display-5 text-center">Startups</div>
-        <div class="col-lg-2 display-5 text-center">Social Ventures</div>
-        <div class="col-lg-3 display-5 text-center">Independent Changemakers</div>
+        <div class="col-lg-5">
+          <img src="./img/tab-4.png" class="img-fluid about-image" />
+        </div>
+        <div class="col-lg-7">
+          <!-- <p class="lead color-black">We believe that when individuals with an aspiration for change collaborate, different
+            perspectives come to light and solutions can be approached in a way we can only
+            imagine.
+          </p> -->
+          <p style="font-size: 1.6em;font-weight: 700;" class="color-black">
+            We partner with visionary and philanthropic entities like
+          </p>
+          <ul style="list-style:none;font-size: 1.2rem;" class="color-black">
+            <li>Non-Profit Organizations</li>
+            <li>Government</li>
+            <li>Startups</li>
+            <li>Social Ventures</li>
+            <li>Independent Changemakers</li>
+          </ul>
+        </div>
       </div>
+      <!-- <div class="row color-black">
+        <div class="col-lg-12 display-5 text-left">Non-Profit Organizations</div>
+        <div class="col-lg-12 display-5 text-left">Government</div>
+        <div class="col-lg-12 display-5 text-left">Startups</div>
+        <div class="col-lg-12 display-5 text-left">Social Ventures</div>
+        <div class="col-lg-12 display-5 text-left">Independent Changemakers</div>
+      </div> -->
     </div>
   </section>
   <img class="img-fluid d-block" style="width:100vw;" src="./img/collab.jpg">
 
   <!-- Design Jam -->
-  <section class="content-section bg-light" style="padding-bottom:1rem;" id="design-jam">
+  <section class="content-section" style="padding-bottom:1rem;" id="design-jam">
     <div class="container text-center">
       <!-- <div class="container text-center"  style="background-color: rgba(255,255,255,0.5);"> -->
       <div class="content-section-heading">
@@ -476,7 +526,8 @@
           </p>
           <p class="lead color-black">
             The design workshop in our backyard allows anybody to test their ideas at a prototype level thus
-            accelerating the change making process. We invite and try to bring onboard activists and organizations who
+            accelerating the change making process. We invite and try to bring onboard activists and organizations
+            who
             can reach out to people and implement
             change at a larger scale.
           </p>
