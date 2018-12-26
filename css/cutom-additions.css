@@ -53,6 +53,8 @@
 
   .carousel-caption h1{
     color: #ffff00 !important;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
   }
 
   #portfolio li {
@@ -117,7 +119,12 @@
   }
   
   .slider1 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
+    
+  }
+
+  .slider1 h1 span {
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   .slider2 {
@@ -126,7 +133,8 @@
   }
   
   .slider2 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
+    
   }
   
   .slider3 {
@@ -135,20 +143,22 @@
   }
   
   .slider3 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
+    
   }
   
   .slider4 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
+    
   }
   
   .slider5 {
     right: -30% !important;
-    /* text-align: right !important; */
   }
 
   .slider5 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
+    
   }
 
   @media (max-width: 768px) {

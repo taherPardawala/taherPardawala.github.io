@@ -398,6 +398,10 @@ a:hover, a:focus, a:active {
   font-family: 'Oswald', sans-serif;
 }
 
+.merriweather {
+  font-family: 'Merriweather', serif;
+}
+
 h2 {
   letter-spacing: 2px !important;
   /* color: red; */
