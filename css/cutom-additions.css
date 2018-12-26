@@ -444,3 +444,21 @@
     height: 120px !important;
     width: 120px;
   }
+
+  /* test animation */
+
+  .come-in {
+    transform: translateX(-200px);
+    animation: come-in 1.5s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 0.8s;
+  }
+  .already-visible {
+    transform: translateX(0);
+    animation: none;
+  }
+  
+  @keyframes come-in {
+    to { transform: translateX(0); }
+  }
