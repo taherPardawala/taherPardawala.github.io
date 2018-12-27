@@ -471,6 +471,28 @@
     width: 120px;
   }
 
+  /* For GSAP Animation */
+
+  /* .img-tab-1 {
+    display: none;
+  } */
+
+  .team-images {
+      transition: all 0.3s ease-out;
+  }
+
+  .team-images:hover {
+    -webkit-box-shadow: 7px 10px 20px 0px rgba(153,145,153,1);
+    -moz-box-shadow: 7px 10px 20px 0px rgba(153,145,153,1);
+    box-shadow: 7px 10px 20px 0px rgba(153,145,153,1);
+    transform: translateY(-4px);
+  }
+
+  /* Portfolio Section Fix */
+
+  #portfolio {
+    height: 115vh;
+  }
   /* test animation */
 
   .come-in {
