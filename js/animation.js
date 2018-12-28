@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
     // Animation Portfolio List
 
-    new ScrollMagic.Scene({
+    /* new ScrollMagic.Scene({
         triggerElement: '#portfolio',
         // duration: '80%',
         offset: 0,
@@ -40,7 +40,7 @@ $( document ).ready(function() {
     })
     .setTween(TweenMax.from('.img-tab-1', 1, {scale: 0, opacity: 0}))
     .addIndicators()
-    .addTo(controller);
+    .addTo(controller); */
     
     // Animation Title 1
 
