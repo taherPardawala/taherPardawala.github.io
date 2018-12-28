@@ -21,15 +21,15 @@ $( document ).ready(function() {
 
     // Animation Portfolio List
 
-    /* new ScrollMagic.Scene({
-        triggerElement: '#portfolio',
-        // duration: '80%',
-        offset: 0,
-        reverse: false
-    })
-    .setTween(TweenMax.staggerFrom('.list-filters', 0.7, {y: 50, opacity: 0, ease: Power2.easeOut}, 0.4))
-    .addIndicators()
-    .addTo(controller);
+    // new ScrollMagic.Scene({
+    //     triggerElement: '#portfolio',
+    //     // duration: '80%',
+    //     offset: 0,
+    //     reverse: false
+    // })
+    // .setTween(TweenMax.staggerFrom('.list-filters', 0.7, {y: 50, opacity: 0, ease: Power2.easeOut}, 0.4))
+    // .addIndicators()
+    // .addTo(controller);
 
     // Animation Services Illustration
     new ScrollMagic.Scene({
@@ -40,7 +40,7 @@ $( document ).ready(function() {
     })
     .setTween(TweenMax.from('.img-tab-1', 1, {scale: 0, opacity: 0}))
     .addIndicators()
-    .addTo(controller); */
+    .addTo(controller); 
     
     // Animation Title 1
 
@@ -111,6 +111,18 @@ $( document ).ready(function() {
         reverse: false
     })
     .setTween(TweenMax.staggerFrom('.title-team', 0.35, {scale: 0, opacity: 0}, 0.16))
+    .addIndicators()
+    .addTo(controller);
+
+    // Animation Title 6
+
+    new ScrollMagic.Scene({
+        triggerElement: '#portfolio',
+        // duration: '80%',
+        offset: -100,
+        reverse: false
+    })
+    .setTween(TweenMax.staggerFrom('.title-change', 0.35, {scale: 0, opacity: 0}, 0.16))
     .addIndicators()
     .addTo(controller);
     
